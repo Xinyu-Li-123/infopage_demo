@@ -10,36 +10,47 @@
 ############################
 
 # Name of website
-title: My Website
+title: "Global China"
 
 # Your name to show in the footer
-author: Some Person
+# author: Some Person
 
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
+  About:
+    - About: "about"
+    - Author: "author"
+    - Contact: "contact"   # newsletter
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+    - Map: "resources/map"
+    - Data: "resources/data"
+  Research: "research/post"
+  Undefined:
+    - Education: "undefined/education"
+    - Policy: "undefined/policy"
+  Engage:
+    - News: "engage/news"
+    - Events: "engage/events"
+    - Media: "engage/media"
+    - Video: "engage/video"
 
 ################
 # --- Logo --- #
 ################
 
-# Image to show in the navigation bar - works best with a square image
-# Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.png"
+# # Image to show in the navigation bar - works best with a square image
+# # Remove this parameter if you don't want an image in the navbar
+# avatar: "/assets/img/avatar-icon.png"
 
-# By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
-round-avatar: true
+# # # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
+# round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-#title-img: /path/to/image
+title-img: "/assets/img/icon.png"
 
 
 #####################################
@@ -49,20 +60,25 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: c/daattali
+  # copy-and-paste the relative path (the string after domain name) to each section
+  # e.g. If the youtube channel has url "youtu.be/@mappingglobalchina5919", 
+  #   then copy-and-paste '"@mappingglobalchina5919"'
+  # Don't forget to wrap the path with QUOTE!
+  
+# email: "someone@example.com"
+# rss: true  # remove this line if you don't want to show an RSS link at the bottom
+  facebook: "Mapping-Global-China"
+# github: daattali
+  twitter: "MapGlobalChina"
+# patreon: DeanAttali
+  youtube: "@mappingglobalchina5919"
 #  medium: yourname
 #  reddit: yourname
-#  linkedin: daattali
+  linkedin: "company/mapping-global-china"
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
-#  instagram: deanat78
+  instagram: "mapglobalchina"
 #  spotify: yourname
 #  telephone: +14159998888
 #  steam: deanat78
@@ -79,7 +95,10 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I'm awesome
+# rss-description: This website is a virtual proof that I'm awesome
+
+copyright-name: "Global China"
+copyright-year: "now"           # either "now" or a stirng of year
 
 ###########################
 # --- General options --- #
@@ -94,7 +113,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "globalchina.org"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
@@ -117,7 +136,7 @@ edit_page_button: true
 navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
-#keywords: "my,list,of,keywords"
+keywords: "global, china, global china, map, BRI, MOU"
 
 ######################################
 # --- Colours / background image --- #
