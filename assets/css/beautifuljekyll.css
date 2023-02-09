@@ -402,6 +402,32 @@ footer {
   {% endif %}
 }
 
+footer .footer-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+footer .footer-left,
+footer .footer-right {
+    flex-basis: 10%;
+    flex-grow: 1;
+    padding: 0 10px;  flex: 50%;
+}
+
+footer .footer-left h6,
+footer .footer-right h6 {
+  font-size: 1.35rem;
+}
+
+footer .footer-row {
+  justify-content: center;
+}
+
+footer .footer-mail-form {
+  padding-bottom: 2rem;
+}
+
 footer p.text-muted {
   color: {{ site.footer-text-col | default: "#777777" }} !important;
 }
@@ -413,6 +439,17 @@ footer a {
 footer a:hover,
 footer a:focus {
   color: {{ site.footer-hover-col | default: "#0085A1" }};
+}
+
+
+footer .footer-description {
+  margin-bottom: 1.875rem;
+}
+
+footer .footer-description p {
+  font-size: 1.125rem;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0;
 }
 
 footer .list-inline {
@@ -436,19 +473,74 @@ footer .footer-custom-content {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+footer .footer-links {
+  font-size: 1.125rem;
+  white-space: nowrap;
+  padding-top: 1rem;
+}
+
+/* newsletter */
+footer .form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+footer .footer-text-field {
+  height: 2.5rem;
+  margin-bottom: 0px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #fff;
+  border-radius: 0.3rem 0px 0rem 0.3rem;
+}
+
+footer .footer-submit-btn {
+  height: 2.5rem;  
+  background-color: #000;
+  border-style: solid;
+  border-width: 0.125rem;
+  border-color: #fff;
+  background-color: transparent;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 0px 0.3rem 0.3rem 0px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+footer .footer-submit-btn:hover {
+  background-color: #fff;
+}
+
+/* footer .fab:hover {
+  color: #2980b9;
+} */
+
+/* automatically adjust size */
 @media (min-width: 768px) {
   footer {
     padding: 3.125rem 0;
   }
-  footer .footer-links {
+  /* footer .footer-links {
     font-size: 1.125rem;
-  }
-  footer .copyright {
-    font-size: 1rem;
+  } */
+  /* footer .copyright {
+    font-size: 1.2rem;
   }
   footer .footer-custom-content {
-    font-size: 1rem;
-  }
+    font-size: 1.2rem;
+  } */
 }
 
 /* --- Post preview (feed) --- */
@@ -622,6 +714,12 @@ footer .footer-custom-content {
 .tag-btn {
   margin: 0.3125rem;
 }
+
+.back-to-top-btn {
+  margin: 0.3125rem;
+}
+
+
 
 #full-tags-list {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;

@@ -1,4 +1,11 @@
 ###########################################################
+### Xinyu Li:
+### This is a modification of the Beautiful Jekyll theme
+### The source code is available at
+###     https://beautifuljekyll.com/
+###################################################################################
+
+###########################################################
 ### Welcome to Beautiful Jekyll!
 ### This config file is meant for settings that affect your entire website. When you first
 ### set up your website you should go through all these settings and edit them, but after
@@ -32,10 +39,18 @@ navbar-links:
     - Education: "undefined/education"
     - Policy: "undefined/policy"
   Engage:
-    - News: "engage/news"
-    - Events: "engage/events"
     - Media: "engage/media"
-    - Video: "engage/video"
+    - Events: "engage/events"
+
+###############################
+# --- List of Collections --- #
+###############################
+
+collections:
+  - research
+  - resources
+  - undefined
+  - engage  
 
 ################
 # --- Logo --- #
@@ -93,12 +108,14 @@ social-network-links:
 #  kaggle: yourname
 #  hackerrank: yourname
 
-# If you want your website to generate an RSS feed, provide a description
-# The URL for the feed will be https://<your_website>/feed.xml
-# rss-description: This website is a virtual proof that I'm awesome
 
+######################
+### Footer options ###
+######################
+
+footer-description: "Global China is a research project that aims to map the Belt and Road Initiative (BRI) and its impact on China’s global engagement."
 copyright-name: "Global China"
-copyright-year: "now"           # either "now" or a stirng of year
+
 
 ###########################
 # --- General options --- #
