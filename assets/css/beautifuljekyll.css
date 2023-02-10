@@ -273,7 +273,7 @@ img {
 .navbar-custom .nav-item.dropdown .dropdown-menu .dropdown-item {
   padding: 0.625rem;
   background-color: {{ site.navbar-col | default: "#EAEAEA" }};
-  text-decoration: none !important;
+  /* text-decoration: none !important; */
   font-weight: normal;
   color: {{ site.navbar-text-col | default: "#404040" }};
   {% unless site.navbar-var-length %}
@@ -395,6 +395,7 @@ footer {
   border-top: 1px #EAEAEA solid;
   margin-top: 3.125rem;
   font-size: 0.875rem;
+  color: {{ site.footer-text-col | default: "#404040" }};
   background-color: {{ site.footer-col | default: "#EAEAEA" }};
   {% if site.footer-img %}
     background-image: url({{ site.footer-img | relative_url }});

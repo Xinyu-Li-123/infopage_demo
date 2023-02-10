@@ -33,8 +33,8 @@ navbar-links:
     - Contact: "contact"   # newsletter
   Resources:
     - Map: "resources/map"
-    - Data: "resources/data"
-  Research: "research/post"
+    - Dataset: "resources/dataset"
+  Research: "research/"
   Undefined:
     - Education: "undefined/education"
     - Policy: "undefined/policy"
@@ -47,10 +47,38 @@ navbar-links:
 ###############################
 
 collections:
-  - research
-  - resources
-  - undefined
-  - engage  
+  research:
+    output: true
+    permalink: /research/index.html
+  resources:
+    output: true
+    permalink: /resources/index.html
+  undefined:
+    output: true
+    permalink: /undefined/index.html
+  engage:
+    output: true
+    permalink: /engage/index.html
+  map:
+    output: true
+    permalink: /resources/map/index.html
+  dataset:
+    output: true
+    permalink: /resources/dataset/index.html
+  education:
+    output: true
+    permalink: /undefined/education/index.html
+  policy:
+    output: true
+    permalink: /undefined/policy/index.html
+  media:
+    output: true
+    permalink: /engage/media/index.html
+  events:
+    output: true
+    permalink: /engage/events/index.html
+
+collections_dir: "collections"
 
 ################
 # --- Logo --- #
@@ -161,15 +189,15 @@ keywords: "global, china, global china, map, BRI, MOU"
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#EAEAEA"
-navbar-text-col: "#404040"
+navbar-col: "#323643"
+navbar-text-col: "#93deff"
 navbar-border-col: "#DDDDDD"
-page-col: "#FFFFFF"
-text-col: "#404040"
+page-col: "#f7f7f7"
+text-col: "#323643"
 link-col: "#008AFF"
 hover-col: "#0085A1"
-footer-col: "#EAEAEA"
-footer-text-col: "#777777"
+footer-col: "#323643"
+footer-text-col: "#93deff"
 footer-link-col: "#404040"
 footer-hover-col: "#0085A1"
 
@@ -286,7 +314,6 @@ date_format: "%B %-d, %Y"
 timezone: "America/Toronto"
 markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
 paginate: 5
 
 kramdown:
